@@ -1,0 +1,361 @@
+.wrapper{
+    margin: auto;
+    width: 1100px;
+    background-color: #e6e6ff;
+}
+    header{
+        height: 600px;
+        background-image: url("https://gdekluet.ru/site/files/site_kaleidoscope/75/1091/altay_smotri_info_1.jpg");
+        background-size: 100%;
+        font-family: Arial;
+        z-index: 1;
+    }
+        nav{
+            position: relative;
+            width: 700px;
+            margin: auto;
+            top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 40px;
+        }
+            #mainName{
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            #rightNavigation{
+                    width: 300px;
+                    background-color: white;
+                    border-radius: 20px;
+                    display: flex;
+                    padding-left: 20px;
+                    padding-right: 20px;
+            }
+            #rightNavigation hr{
+                opacity: 30%;
+            }
+                #rightNavigation div{
+                    padding-top: 8px;
+                }
+                #rightNavigation img{
+                    position: relative;
+                    top: 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+                #rightNavigation input{
+                    width: 90px;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 18px;
+                }
+                #rightNavigation input::-webkit-input-placeholder {
+                    color: black;
+                    font-size: 18px;
+                }
+                #rightNavigation input::-moz-placeholder          {
+                    color: black;
+                    font-size: 18px;
+                }/* Firefox 19+ */
+                #rightNavigation input:-moz-placeholder           {
+                    color: black;
+                    font-size: 18px;
+                }/* Firefox 18- */
+                #rightNavigation input:-ms-input-placeholder      {
+                    color: black;
+                    font-size: 18px;
+                }
+                #collection_btn{
+                    margin: 3px 10px 0px 0px;
+                    width: 110px;
+                    height: 30px;
+                    text-align: center;
+                }
+                #collection_btn img{
+                    width: 15px;
+                    height: 15px;
+                }
+                #rightNavigation span{
+                    width: 150px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+
+        #eventName{
+            margin-top: 150px;
+            font-size: 75px;
+            font-weight: bold;
+            padding-left: 600px;
+        }
+            #summer{
+                margin: 0px;
+            }
+            #collection{
+                margin: 0px;
+                color: white;
+            }
+            #discount{
+                margin: 0px;
+                font-size: 35px;
+            }
+
+        button#headDetails{
+            position: absolute;
+            left: 655px;
+            top: 450px;
+            width: 140px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 20px;
+            font-family: Arial;
+            border: none;
+            box-shadow: -3px 3px 5px #56b8d6;
+        }
+        button#headDetails:hover{
+            cursor: pointer;
+            background: #56b8d6;
+            box-shadow: none;
+            color: white;
+        }
+
+    main{
+        width: 900px;
+        position: relative;
+        top: -50px;
+        margin: auto;
+        padding: 50px 0px;
+        background-color: white;
+        z-index: 2;
+    }
+/* Начало секции 1 */
+            #section1 h1{
+                text-align: center;
+                font-family: Arial;
+            }
+.picturesBlocks{
+    margin: auto;
+    width: 690px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    .pictureBlock{
+        margin: 0px 5px;
+        width: 150px;
+        height: 250px;
+        text-align: center;
+        padding: 25px;
+        border: 10px solid white;
+    }
+    .pictureBlock:hover{
+        border: 10px solid transparent;
+        border-color: #eff2e4;
+        border-image-slice: 1;
+    }
+        img.inPictureBlock{
+            width: 150px;
+            height: 150px;
+        }
+            .panelInPictureBlock{
+                visibility: hidden;
+            }
+            .pictureBlock:hover > .panelInPictureBlock{
+                visibility: visible;
+                font-size: 12px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+                img.inPanel{
+                    width: 10px;
+                    height: 10px;
+                }
+                .panelInPictureBlock a{
+                    text-decoration: none;
+                }
+            .addToCartButton{
+                visibility: hidden;
+            }
+            .pictureBlock:hover > .addToCartButton{
+                display: block;
+                width: 130px;
+                height: 30px;
+                visibility: visible;
+                position: relative;
+                left: 10px;
+                top: 3px;
+                background: linear-gradient(to right, #ad7bed, #7d4fe0);
+                font-size: 15px;
+                border-radius: 23px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                padding-top: 16px;
+                font-size: 16px;
+                font-family: Arial;
+            }
+            .pictureBlock:hover > .addToCartButton:hover{
+                background: #c758b4;
+            }
+/* Конец секции 1 */
+/* Начало секции 2 */
+        #section2{
+            padding: 100px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial;
+        }
+            #brands{
+                width: 350px;
+            }
+                #brands h1{
+                    font-size: 50px;
+                }
+                #brands h3{
+                    font-size: 25px;
+                    font-weight: normal;
+                }
+                    #brands h3 > a{
+                        text-decoration: none;
+                        color: blue;
+                    }
+                #brands p{
+                    text-align: justify;
+                    color: grey;
+                }
+            #brandImg img{
+                width: 320px;
+                height: 100%;
+                padding: 0px 15px;
+            }
+/* Конец второй секции */
+/* Начало третьей секции */
+    #section3{
+        padding: 100px;
+    }
+        #section3 h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: Arial;
+        }
+        #section3 ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+        }
+            #section3 li{
+                margin: auto;
+            }
+            #section3 span{
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+            #section3 span:hover, #section3 span.active{
+                color: red;
+            }
+/* Конец третьей секции */
+
+/* Newsletter */
+    #newsletter{
+        position: relative;
+        top: -100px;
+        height: 450px;
+        background: linear-gradient(to right, #ad7bed, #7d4fe0);
+        font-family: Arial;
+        z-index: 1;
+    }
+        #newsletter h1{
+            margin: 0;
+            padding-top: 125px;
+            text-align: center;
+            font-size: 100px;
+            opacity: 5%;
+            color: white;
+        }
+        #email_input{
+            position: relative;
+            text-align: center;
+            top: -140px;
+        }
+            #email_input h2{
+                color: white;
+                font-size: 60px;
+            }
+            #email_input input{
+                position: relative;
+                left: 50px;
+                width: 550px;
+                height: 50px;
+                border-radius: 25px;
+                padding-left: 20px;
+                font-size: 20px;
+            }
+            ::-webkit-input-placeholder {
+                color: black;
+                font-size: 20px;
+            }
+            ::-moz-placeholder          {
+                color: black;
+                font-size: 20px;
+            }/* Firefox 19+ */
+            :-moz-placeholder           {
+                color: black;
+                font-size: 20px;
+            }/* Firefox 18- */
+            :-ms-input-placeholder      {
+                color: black;
+                font-size: 20px;
+            }
+            #email_input button{
+                position: relative;
+                right: 80px;
+                height: 48px;
+                width: 120px;
+                border-radius: 22px;
+                background: linear-gradient(to right, #ad7bed, #7d4fe0);
+                color: white;
+                font-size: 18px;
+            }
+            #email_input button:hover{
+                background: #c758b4;
+                cursor: pointer;
+            }
+footer{
+    height: 300px;
+    margin: auto;
+    font-family: Arial;
+    text-align: center;
+}
+    footer ul{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 30px 0px 50px 0px;
+        width: 600px;
+    }
+        footer ul li{
+            margin: auto;
+            width: 50px;
+        }
+            footer span{
+                cursor: pointer;
+            }
+            footer span:hover{
+                color: red;
+            }
+    footer img{
+        width: 50px;
+        height: 50px;
+        padding: 0px 20px;
+    }
+    footer p{
+        padding-top: 50px;
+        opacity: 40%;
+    }
